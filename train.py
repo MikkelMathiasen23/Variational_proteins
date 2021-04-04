@@ -6,7 +6,7 @@ from scipy.stats import spearmanr
 from torch.distributions.normal import Normal
 from vae import VAE_bayesian
 
-def train_vae(epochs=200,n = 256, batch_size =128,bayesian= True, group_sparsity=True, beta=1, shared_size= 40, dropout = 0, repeat = 1):
+def train_vae(epochs=200,n_ensembles = 256, batch_size =128,bayesian= True, group_sparsity=True, beta=1, shared_size= 40, dropout = 0, repeat = 1):
   device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
   dataloader, df, mutants_tensor, mutants_df, weights, neff = data(batch_size = batch_size, device = device)
@@ -74,7 +74,7 @@ def train_vae(epochs=200,n = 256, batch_size =128,bayesian= True, group_sparsity
         # Ensemble over 256 iterations of the validation set
         if bayesian:
           if epoch % 8 == 0:
-              mt_elbos, wt_elbos, ensambles = 0, 0, n
+              mt_elbos, wt_elbos, ensambles = 0, 0, n_ensembles
               for i in range(ensambles):
                   if i and (i % 2 == 0):
                       print(f"\tReached {i}", " "*32, end="\r")
