@@ -1,6 +1,5 @@
 import torch
 import numpy as np 
-from scipy.special import erfinv
 from torch.distributions.normal import Normal
 import torch.nn.functional as F
 from torch.distributions.kl import kl_divergence
