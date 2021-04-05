@@ -6,7 +6,8 @@ from scipy.stats import spearmanr
 from torch.distributions.normal import Normal
 from vae import VAE_bayesian
 
-def train_vae(epochs=200,n_ensembles = 256, batch_size =128,bayesian= True, group_sparsity=True, beta=1, shared_size= 40, dropout = 0, repeat = 1):
+def train_vae(epochs=200,n_ensambles = 256, batch_size =128,bayesian= True, group_sparsity=True, beta=1, shared_size= 40, dropout = 0, repeat = 1,
+             latent_size = 30, hidden_size = 2000):
   device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
   dataloader, df, mutants_tensor, mutants_df, weights, neff = data(batch_size = batch_size, device = device)
@@ -20,16 +21,16 @@ def train_vae(epochs=200,n_ensembles = 256, batch_size =128,bayesian= True, grou
       'device': device,
       'bayesian': bayesian,
       'beta': beta,
-      'hidden_size': 2000,
-      'latent_size': 30,
+      'hidden_size': hidden_size,
+      'latent_size': latent_size,
       'shared_size': shared_size,
       'repeat': repeat,
       'group_sparsity': group_sparsity,
       'dropout': dropout
   }
 
-  vae   = VAE_bayesian(**args).to(device)
-  opt   = optim.Adam(vae.parameters())
+  vae   = VAE_bayesian(**args).to(device) #Initialize VAE model with the parameters stated above 
+  opt   = optim.Adam(vae.parameters()) #Initialize Adam optimizer
 
   # rl  = Reconstruction loss
   # kl  = Kullback-Leibler divergence loss
@@ -50,16 +51,17 @@ def train_vae(epochs=200,n_ensembles = 256, batch_size =128,bayesian= True, grou
 
       for batch in dataloader:
           opt.zero_grad()
-          x_hat, mu, logvar = vae(batch)
+          x_hat, mu, logvar = vae(batch) #Compute forward pass
           if bayesian:
-            loss, rl, kl, KLB = vae.loss(x_hat, batch, mu, logvar)
-            loss.mean().backward()
+            loss, rl, kl, KLB = vae.loss(x_hat, batch, mu, logvar) #Compute loss statistics
+            loss.mean().backward() 
             opt.step()
+            #Save statistics
             epoch_losses['rl'].append(rl.mean().item())
             epoch_losses['kl'].append(kl.mean().item())
             epoch_losses['KLB'].append(KLB.mean().item())
 
-          else: 
+          else: #If not in bayesian setting no KLB is present
             loss, rl, kl = vae.loss(x_hat, batch, mu, logvar)
             loss.mean().backward()
             opt.step()
@@ -68,27 +70,29 @@ def train_vae(epochs=200,n_ensembles = 256, batch_size =128,bayesian= True, grou
       
       # Evaluation on mutants
       vae.eval()
-      with torch.no_grad():
+      with torch.no_grad(): #Ensure no gradients when computing the ensambles
         cor_lst = []
 
         # Ensemble over 256 iterations of the validation set
         if bayesian:
-          if epoch % 8 == 0:
-              mt_elbos, wt_elbos, ensambles = 0, 0, n_ensembles
+          if epoch % 8 == 0: #To speed computations up only do the ensambles every 8 epoch
+              mt_elbos, wt_elbos, ensambles = 0, 0, n_ensambles
               for i in range(ensambles):
                   if i and (i % 2 == 0):
                       print(f"\tReached {i}", " "*32, end="\r")
 
-                  elbos     = vae.logp_calc(eval_batch).detach().cpu()
+                  elbos     = vae.logp_calc(eval_batch).detach().cpu() #Compute eblos needed for correlation computation
+                  
+                  #Split up computation as spearman correlation is not linear
                   wt_elbos += elbos[0]
                   mt_elbos += elbos[1:]
               
               print()
 
               diffs = (mt_elbos / ensambles) - (wt_elbos / ensambles)
-              cor, _  = spearmanr(mutants_df.value, diffs)
+              cor, _  = spearmanr(mutants_df.value, diffs) #Compute the correlation
 
-        else:
+        else: #If not doing bayesian no need for ensambles
           elbos       = vae.logp_calc(eval_batch)
           diffs       = elbos[1:] - elbos[0] # log-ratio (first equation in the paper)
           cor, _      = spearmanr(mutants_df.value, diffs.cpu().detach())
