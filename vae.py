@@ -46,7 +46,9 @@ class VAE_bayesian(torch.nn.Module):
           l.register_parameter('weight_logvar', weight_logvar_param)
 
           #Initialize weight mean using xavier normal:
-          torch.nn.init.xavier_normal_(weight_mean_param)
+          var = 2/(l.out_features + l.in_features)
+          torch.nn.init.normal_(weight_mean_param, 0.0, std = var**(1/2))
+          #torch.nn.init.xavier_normal_(weight_mean_param)
           #Initialize logvar using constant:
           torch.nn.init.constant_(weight_logvar_param, -5)
 
