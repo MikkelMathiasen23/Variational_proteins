@@ -45,12 +45,8 @@ class VAE_bayesian(torch.nn.Module):
           l.register_parameter('weight_mean', weight_mean_param)
           l.register_parameter('weight_logvar', weight_logvar_param)
 
-          #Initialize mean and logvar:
-          var = 2/(l.out_features + l.in_features)
-          
           #Initialize weight mean using xavier normal:
           torch.nn.init.xavier_normal_(weight_mean_param)
-          #torch.nn.init.normal_(weight_mean_param, 0.0, std = var**(1/2))
           #Initialize logvar using constant:
           torch.nn.init.constant_(weight_logvar_param, -5)
 
@@ -227,28 +223,30 @@ class VAE_bayesian(torch.nn.Module):
         #Calculate the loss of RL + KL of latent:
         out = (RL + self.beta*kl_latent).mean() #Can use the beta term to weight the kl-latent
 
-        if self.bayesian:
-          #KL term for weights and bias of bayesian layers:
+        if self.bayesian: #Compute KL divergence term for all bayesian parameters including bias and weights.
+
           KLB = torch.tensor([0]).float().to(self.device) #Initialize as zero and then just add the coming values:
           for l in self.sample_layers:
             if type(l) == torch.nn.Linear:
-                #Weights:
+                #Compute normal distribution using the parameters for the layer:
                 mu, logvar  =   l.weight_mean, l.weight_logvar
                 dist_       =   Normal(mu, logvar.mul(1/2).exp())
 
                 if l.name == 'S':
+                   #S matrix is a special case as we want another prior distribution N(-9.3053, log(4))
                   dist_prior_ =   Normal(-9.3053*torch.ones_like(mu), np.log(4)*torch.ones_like(logvar))                
                 else:
+                   #For the rest we want prior N(0,1):
                   dist_prior_ =   Normal(torch.zeros_like(mu), torch.ones_like(logvar))
-                KLB        +=   kl_divergence(dist_, dist_prior_).sum()
-                if l.bias is not None:
+                KLB        +=   kl_divergence(dist_, dist_prior_).sum() #Compute convergence
+                if l.bias is not None: #Do the same for bias if the layer has that
                   #Bias:
                   bias_mu, bias_logvar =  l.bias_mean, l.bias_logvar
                   dist_       = Normal(bias_mu, bias_logvar.mul(1/2).exp())
                   dist_prior_ = Normal(torch.zeros_like(bias_mu), torch.ones_like(bias_logvar))
                   KLB        += kl_divergence(dist_, dist_prior_).sum()
           
-          if self.group_sparsity:
+          if self.group_sparsity: #It is also needed to compute the KL divergence for lambda and bias of the group-sparsity output layer
             #       lambda:          
             dist_lambda       = Normal(self.lambda_mean, self.lambda_logvar.mul(1/2).exp())
             dist_prior_lambda = Normal(torch.zeros_like(self.lambda_mean), torch.ones_like(self.lambda_logvar))
@@ -259,7 +257,7 @@ class VAE_bayesian(torch.nn.Module):
             dist_prior_b = Normal(torch.zeros_like(self.b_mean), torch.ones_like(self.b_logvar))
             KLB += kl_divergence(dist_b, dist_prior_b).sum()
 
-          KLB/=self.neff
+          KLB/=self.neff #Divide the KL divergence term with Neff from sequence weighting 
           #Total loss including RL + KL_latent and KLB
           out = out + KLB
           return out  , RL, self.beta*kl_latent, KLB
