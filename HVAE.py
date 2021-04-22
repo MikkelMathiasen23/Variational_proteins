@@ -1,3 +1,8 @@
+import torch
+from torch.distributions.normal import Normal
+import torch.nn.functional as F
+from torch.distributions.kl import kl_divergence
+
 class HVAE(torch.nn.Module):
 
     def __init__(self, **kwargs):     
