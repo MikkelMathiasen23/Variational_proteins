@@ -26,11 +26,11 @@ class HVAE(torch.nn.Module):
         for i,l in enumerate(self.L):
           name = 'e'+str(i)
           if i==0:
-            self.e[name] = torch.nn.Linear(self.input_size, l).to(device)
-            self.W[name] = torch.nn.Linear(l,self.latents[i]).to(device)
+            self.e[name] = torch.nn.Linear(self.input_size, l).to(self.device)
+            self.W[name] = torch.nn.Linear(l,self.latents[i]).to(self.device)
           else:
-            self.e[name] = torch.nn.Linear(self.L[i-1], l).to(device)
-            self.W[name] = torch.nn.Linear(l,self.latents[i]).to(device)
+            self.e[name] = torch.nn.Linear(self.L[i-1], l).to(self.device)
+            self.W[name] = torch.nn.Linear(l,self.latents[i]).to(self.device)
 
           torch.nn.init.xavier_normal_(self.e[name].weight)
           torch.nn.init.xavier_normal_(self.W[name].weight)
@@ -41,11 +41,11 @@ class HVAE(torch.nn.Module):
         for l in range(len(self.L)-1,-1,-1):
           name = 'd'+str(l)
           if l == 0:
-            self.W[name] = torch.nn.Linear(self.latents[l],self.latents[l] ).to(device)
+            self.W[name] = torch.nn.Linear(self.latents[l],self.latents[l] ).to(self.device)
           else:
-            self.W[name] = torch.nn.Linear(self.latents[l], self.latents[l-1]).to(device)
+            self.W[name] = torch.nn.Linear(self.latents[l], self.latents[l-1]).to(self.device)
             if self.latents[l] != self.latents[l-1]:
-              self.upscale[name] = torch.nn.Linear(self.latents[l], self.latents[l-1]).to(device)
+              self.upscale[name] = torch.nn.Linear(self.latents[l], self.latents[l-1]).to(self.device)
               torch.nn.init.xavier_normal_(self.upscale[name].weight)
               torch.nn.init.constant_(self.upscale[name].bias, -5)
           torch.nn.init.xavier_normal_(self.W[name].weight)
@@ -133,8 +133,8 @@ class HVAE(torch.nn.Module):
 
           z = self.sampler(self.d_mu[i], self.d_logvar[i])
 
-          self.p_mu[i] = torch.nn.Parameter(torch.zeros_like(self.d_mu[i]).to(device))
-          self.p_logvar[i] = torch.nn.Parameter(torch.eye(self.d_logvar[i].shape[0],self.d_logvar[i].shape[1]).to(device))
+          self.p_mu[i] = torch.nn.Parameter(torch.zeros_like(self.d_mu[i]).to(self.device))
+          self.p_logvar[i] = torch.nn.Parameter(torch.eye(self.d_logvar[i].shape[0],self.d_logvar[i].shape[1]).to(self.device))
         else:
           name = 'd' + str(i+1)
           _, self.p_mu[i], self.p_logvar[i] = self.ed_sampler(z, name)
