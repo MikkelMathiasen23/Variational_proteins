@@ -1,0 +1,2 @@
+rho,time_this_iter_s,done,timesteps_total,episodes_total,training_iteration,experiment_id,date,timestamp,time_total_s,pid,hostname,node_ip,time_since_restore,timesteps_since_restore,iterations_since_restore,trial_id
+0.5378935856751235,6.28926157951355,False,,,1,4ebf66d4cd1b466dae6b57c2b5021a7a,2021-04-22_16-55-53,1619103353,6.28926157951355,25248,n-62-20-9,10.66.20.9,6.28926157951355,0,1,cb2bb_00001

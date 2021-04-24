@@ -15,12 +15,12 @@ from torch.distributions.normal import Normal
 from HVAE import HVAE
 import os 
 
-os.chdir('/content/drive/MyDrive/Mathematical modelling and computation/2. semester/02460 - Advanced machine learning/variational-proteins-main/Variational_proteins')
+os.chdir('/zhome/b8/a/122402/VAE-protein/Variational_proteins')
 
 def train_func(config):
   batch_size = 128
-  os.chdir('/content/drive/MyDrive/Mathematical modelling and computation/2. semester/02460 - Advanced machine learning/variational-proteins-main/Variational_proteins')
-  device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+  os.chdir('/zhome/b8/a/122402/VAE-protein/Variational_proteins')
+  device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
   dataloader, df, mutants_tensor, mutants_df, weights, neff = data(batch_size = batch_size, device = device)
   wildtype   = dataloader.dataset[0] # one-hot-encoded wildtype 
   eval_batch = torch.cat([wildtype.unsqueeze(0), mutants_tensor])
@@ -102,7 +102,7 @@ analysis = tune.run(
     config={ 
         "config": tune.grid_search(param_grid)
     },
-    local_dir="/content/drive/MyDrive/Mathematical modelling and computation/2. semester/02460 - Advanced machine learning/variational-proteins-main/Variational_proteins",
+    local_dir='/zhome/b8/a/122402/VAE-protein/Variational_proteins',
     resources_per_trial={'gpu':1})
 
 print("Best config: ", analysis.get_best_config(

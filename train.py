@@ -8,7 +8,7 @@ from vae import VAE_bayesian
 
 def train_vae(epochs=200,n_ensambles = 256, batch_size =128,bayesian= True, group_sparsity=True, beta=1, shared_size= 40, dropout = 0, repeat = 1,
              latent_size = 30, hidden_size = 2000):
-  device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+  device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
   dataloader, df, mutants_tensor, mutants_df, weights, neff = data(batch_size = batch_size, device = device)
 
