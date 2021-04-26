@@ -59,9 +59,9 @@ class HVAE(torch.nn.Module):
               torch.nn.Sigmoid()        
           )
           #Define linear layers needed for creating group saprsity of last linear layer of the decoder
-          self.W_g = torch.nn.Linear(self.shared_size, (self.hidden_size//4) * self.seq_len, bias = False ) #Reduce the computation of D and S by down-scaling the size 
+          self.W_g = torch.nn.Linear(self.shared_size, (self.hidden_size//self.shared_size) * self.seq_len, bias = False ) #Reduce the computation of D and S by down-scaling the size 
           self.D = torch.nn.Linear(self.alphabet_size,self.shared_size , bias = False)
-          self.S = torch.nn.Linear(self.seq_len, (self.hidden_size//4)//self.repeat, bias = False) #Down-scale as with W, but can also imply that there only are needed 
+          self.S = torch.nn.Linear(self.seq_len, (self.hidden_size//self.shared_size)//self.repeat, bias = False) #Down-scale as with W, but can also imply that there only are needed 
           #If not in bayesian setting then initialize without mean and logvar:
           self.lambda_  = torch.nn.Parameter(torch.Tensor([0.1] * self.input_size))
           self.b_       = torch.nn.Parameter(torch.Tensor([0.1] * self.input_size))
