@@ -182,3 +182,254 @@ python3: can't open file 'gridsearch_ray_tune.py': [Errno 2] No such file or dir
 2021-04-23 18:07:22,575	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256, 512), 'config/latents': (8, 16, 16, 16)}
 [2m[36m(pid=21958)[0m 2021-04-23 18:07:32,240	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
 2021-04-23 18:11:08,286	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256, 512), 'config/latents': (16, 16, 16, 16)}
+2021-04-24 17:24:31,584	INFO services.py:1172 -- View the Ray dashboard at [1m[32mhttp://127.0.0.1:8265[39m[22m
+2021-04-24 17:24:40,959	WARNING function_runner.py:540 -- Function checkpointing is disabled. This may result in unexpected behavior when using checkpointing features or certain schedulers. To enable, set the train function arguments to be `func(config, checkpoint_dir=None)`.
+[2m[36m(pid=23070)[0m 2021-04-24 17:25:17,120	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 17:27:05,502	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256), 'config/latents': (4, 4)}
+[2m[36m(pid=23068)[0m 2021-04-24 17:27:15,469	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 17:29:03,854	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256), 'config/latents': (4, 8)}
+[2m[36m(pid=23065)[0m 2021-04-24 17:29:13,491	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 17:31:00,554	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256), 'config/latents': (4, 16)}
+[2m[36m(pid=23063)[0m 2021-04-24 17:31:09,971	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 17:32:56,810	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256), 'config/latents': (8, 8)}
+[2m[36m(pid=23062)[0m 2021-04-24 17:33:06,162	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 17:34:53,281	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256), 'config/latents': (8, 16)}
+[2m[36m(pid=23060)[0m 2021-04-24 17:35:02,497	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 17:36:48,278	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256), 'config/latents': (16, 16)}
+[2m[36m(pid=23059)[0m 2021-04-24 17:36:57,501	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 17:38:44,243	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512), 'config/latents': (4, 4)}
+[2m[36m(pid=23057)[0m 2021-04-24 17:38:53,386	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 17:40:38,325	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512), 'config/latents': (4, 8)}
+[2m[36m(pid=23055)[0m 2021-04-24 17:40:47,517	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 17:42:32,925	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512), 'config/latents': (4, 16)}
+[2m[36m(pid=23054)[0m 2021-04-24 17:42:41,954	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 17:44:25,273	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512), 'config/latents': (8, 8)}
+[2m[36m(pid=23053)[0m 2021-04-24 17:44:34,491	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 17:46:17,034	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512), 'config/latents': (8, 16)}
+[2m[36m(pid=23048)[0m 2021-04-24 17:46:25,803	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 17:48:07,578	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512), 'config/latents': (16, 16)}
+[2m[36m(pid=23047)[0m 2021-04-24 17:48:16,641	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 17:49:58,332	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (512, 512), 'config/latents': (4, 4)}
+[2m[36m(pid=23046)[0m 2021-04-24 17:50:07,112	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 17:51:48,430	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (512, 512), 'config/latents': (4, 8)}
+[2m[36m(pid=23045)[0m 2021-04-24 17:51:57,092	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 17:53:37,014	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (512, 512), 'config/latents': (4, 16)}
+[2m[36m(pid=23044)[0m 2021-04-24 17:53:45,736	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 17:55:25,972	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (512, 512), 'config/latents': (8, 8)}
+[2m[36m(pid=23043)[0m 2021-04-24 17:55:34,555	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 17:57:14,348	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (512, 512), 'config/latents': (8, 16)}
+[2m[36m(pid=23042)[0m 2021-04-24 17:57:22,867	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 17:59:03,376	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (512, 512), 'config/latents': (16, 16)}
+[2m[36m(pid=23041)[0m 2021-04-24 17:59:12,043	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 18:01:21,393	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256), 'config/latents': (4, 4, 4)}
+[2m[36m(pid=23040)[0m 2021-04-24 18:01:30,036	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 18:03:38,798	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256), 'config/latents': (4, 4, 8)}
+[2m[36m(pid=23039)[0m 2021-04-24 18:03:47,351	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 18:05:55,466	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256), 'config/latents': (4, 4, 16)}
+[2m[36m(pid=23038)[0m 2021-04-24 18:06:03,971	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 18:08:13,119	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256), 'config/latents': (4, 8, 8)}
+[2m[36m(pid=23037)[0m 2021-04-24 18:08:21,475	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 18:10:26,843	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256), 'config/latents': (4, 8, 16)}
+[2m[36m(pid=23036)[0m 2021-04-24 18:10:35,148	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 18:12:42,486	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256), 'config/latents': (4, 16, 16)}
+[2m[36m(pid=26642)[0m 2021-04-24 18:12:51,322	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 18:14:59,010	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256), 'config/latents': (8, 8, 8)}
+[2m[36m(pid=26793)[0m 2021-04-24 18:15:07,872	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 18:17:14,901	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256), 'config/latents': (8, 8, 16)}
+[2m[36m(pid=26942)[0m 2021-04-24 18:17:23,785	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 18:19:32,720	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256), 'config/latents': (8, 16, 16)}
+[2m[36m(pid=27100)[0m 2021-04-24 18:19:41,658	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 18:21:48,212	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256), 'config/latents': (16, 16, 16)}
+[2m[36m(pid=27266)[0m 2021-04-24 18:21:57,001	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 18:24:03,660	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 512), 'config/latents': (4, 4, 4)}
+[2m[36m(pid=27415)[0m 2021-04-24 18:24:12,446	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 18:26:18,202	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 512), 'config/latents': (4, 4, 8)}
+[2m[36m(pid=27568)[0m 2021-04-24 18:26:27,060	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 18:28:32,719	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 512), 'config/latents': (4, 4, 16)}
+[2m[36m(pid=27720)[0m 2021-04-24 18:28:41,499	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 18:30:47,491	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 512), 'config/latents': (4, 8, 8)}
+[2m[36m(pid=27881)[0m 2021-04-24 18:30:56,383	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 18:33:02,996	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 512), 'config/latents': (4, 8, 16)}
+[2m[36m(pid=28035)[0m 2021-04-24 18:33:11,877	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 18:35:18,481	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 512), 'config/latents': (4, 16, 16)}
+[2m[36m(pid=28184)[0m 2021-04-24 18:35:27,385	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 18:37:32,210	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 512), 'config/latents': (8, 8, 8)}
+[2m[36m(pid=28332)[0m 2021-04-24 18:37:41,035	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 18:39:46,685	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 512), 'config/latents': (8, 8, 16)}
+[2m[36m(pid=28484)[0m 2021-04-24 18:39:55,581	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 18:42:03,337	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 512), 'config/latents': (8, 16, 16)}
+[2m[36m(pid=28661)[0m 2021-04-24 18:42:12,168	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 18:44:19,579	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 512), 'config/latents': (16, 16, 16)}
+[2m[36m(pid=28806)[0m 2021-04-24 18:44:28,538	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 18:46:35,636	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512, 512), 'config/latents': (4, 4, 4)}
+[2m[36m(pid=28956)[0m 2021-04-24 18:46:44,601	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 18:48:52,371	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512, 512), 'config/latents': (4, 4, 8)}
+[2m[36m(pid=29262)[0m 2021-04-24 18:49:07,394	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 18:51:16,009	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512, 512), 'config/latents': (4, 4, 16)}
+[2m[36m(pid=29432)[0m 2021-04-24 18:51:24,923	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 18:53:32,236	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512, 512), 'config/latents': (4, 8, 8)}
+[2m[36m(pid=29590)[0m 2021-04-24 18:53:41,011	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 18:55:48,693	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512, 512), 'config/latents': (4, 8, 16)}
+[2m[36m(pid=29747)[0m 2021-04-24 18:55:57,593	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 18:58:05,856	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512, 512), 'config/latents': (4, 16, 16)}
+[2m[36m(pid=29899)[0m 2021-04-24 18:58:14,803	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 19:00:21,252	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512, 512), 'config/latents': (8, 8, 8)}
+[2m[36m(pid=30059)[0m 2021-04-24 19:00:30,097	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+[2m[36m(pid=30059)[0m /zhome/b8/a/122402/VAE-protein/vae_env/lib/python3.8/site-packages/scipy/stats/stats.py:4264: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+[2m[36m(pid=30059)[0m   warnings.warn(SpearmanRConstantInputWarning())
+2021-04-24 19:02:38,774	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512, 512), 'config/latents': (8, 8, 16)}
+[2m[36m(pid=30238)[0m 2021-04-24 19:02:47,773	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 19:04:56,624	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512, 512), 'config/latents': (8, 16, 16)}
+[2m[36m(pid=30397)[0m 2021-04-24 19:05:05,519	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 19:07:12,868	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512, 512), 'config/latents': (16, 16, 16)}
+[2m[36m(pid=30545)[0m 2021-04-24 19:07:21,755	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 19:09:30,203	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (512, 512, 512), 'config/latents': (4, 4, 4)}
+[2m[36m(pid=30703)[0m 2021-04-24 19:09:39,153	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 19:11:47,303	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (512, 512, 512), 'config/latents': (4, 4, 8)}
+[2m[36m(pid=30869)[0m 2021-04-24 19:11:56,353	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 19:14:04,844	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (512, 512, 512), 'config/latents': (4, 4, 16)}
+[2m[36m(pid=31022)[0m 2021-04-24 19:14:13,848	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 19:16:22,477	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (512, 512, 512), 'config/latents': (4, 8, 8)}
+[2m[36m(pid=31178)[0m 2021-04-24 19:16:31,473	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 19:18:41,760	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (512, 512, 512), 'config/latents': (4, 8, 16)}
+[2m[36m(pid=31335)[0m 2021-04-24 19:18:50,809	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 19:21:00,586	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (512, 512, 512), 'config/latents': (4, 16, 16)}
+[2m[36m(pid=31503)[0m 2021-04-24 19:21:09,584	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 19:23:17,280	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (512, 512, 512), 'config/latents': (8, 8, 8)}
+[2m[36m(pid=31659)[0m 2021-04-24 19:23:26,307	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 19:25:33,158	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (512, 512, 512), 'config/latents': (8, 8, 16)}
+[2m[36m(pid=31813)[0m 2021-04-24 19:25:42,139	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 19:27:51,181	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (512, 512, 512), 'config/latents': (8, 16, 16)}
+[2m[36m(pid=31966)[0m 2021-04-24 19:28:00,141	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 19:30:08,938	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (512, 512, 512), 'config/latents': (16, 16, 16)}
+[2m[36m(pid=32128)[0m 2021-04-24 19:30:17,999	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 19:32:57,559	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256, 256), 'config/latents': (4, 4, 4, 4)}
+[2m[36m(pid=32317)[0m 2021-04-24 19:33:06,726	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+[2m[36m(pid=32317)[0m /zhome/b8/a/122402/VAE-protein/vae_env/lib/python3.8/site-packages/scipy/stats/stats.py:4264: SpearmanRConstantInputWarning: An input array is constant; the correlation coefficent is not defined.
+[2m[36m(pid=32317)[0m   warnings.warn(SpearmanRConstantInputWarning())
+2021-04-24 19:35:46,854	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256, 256), 'config/latents': (4, 4, 4, 8)}
+[2m[36m(pid=32499)[0m 2021-04-24 19:35:56,198	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 19:38:34,495	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256, 256), 'config/latents': (4, 4, 4, 16)}
+[2m[36m(pid=32683)[0m 2021-04-24 19:38:43,612	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 19:41:22,855	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256, 256), 'config/latents': (4, 4, 8, 8)}
+[2m[36m(pid=416)[0m 2021-04-24 19:41:32,088	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 19:44:11,083	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256, 256), 'config/latents': (4, 4, 8, 16)}
+[2m[36m(pid=625)[0m 2021-04-24 19:44:20,309	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 19:47:01,164	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256, 256), 'config/latents': (4, 4, 16, 16)}
+[2m[36m(pid=807)[0m 2021-04-24 19:47:10,340	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 19:49:50,185	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256, 256), 'config/latents': (4, 8, 8, 8)}
+[2m[36m(pid=996)[0m 2021-04-24 19:49:59,387	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 19:52:42,220	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256, 256), 'config/latents': (4, 8, 8, 16)}
+[2m[36m(pid=1230)[0m 2021-04-24 19:52:51,454	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 19:55:32,119	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256, 256), 'config/latents': (4, 8, 16, 16)}
+[2m[36m(pid=1453)[0m 2021-04-24 19:55:41,477	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 19:58:22,471	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256, 256), 'config/latents': (4, 16, 16, 16)}
+[2m[36m(pid=1632)[0m 2021-04-24 19:58:31,655	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 20:01:11,497	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256, 256), 'config/latents': (8, 8, 8, 8)}
+[2m[36m(pid=1865)[0m 2021-04-24 20:01:21,411	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 20:04:02,047	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256, 256), 'config/latents': (8, 8, 8, 16)}
+[2m[36m(pid=2054)[0m 2021-04-24 20:04:11,340	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 20:06:52,092	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256, 256), 'config/latents': (8, 8, 16, 16)}
+[2m[36m(pid=2247)[0m 2021-04-24 20:07:01,320	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 20:09:41,056	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256, 256), 'config/latents': (8, 16, 16, 16)}
+[2m[36m(pid=2441)[0m 2021-04-24 20:09:50,294	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 20:12:30,318	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256, 256), 'config/latents': (16, 16, 16, 16)}
+[2m[36m(pid=2642)[0m 2021-04-24 20:12:39,617	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 20:15:19,129	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256, 512), 'config/latents': (4, 4, 4, 4)}
+[2m[36m(pid=2828)[0m 2021-04-24 20:15:28,397	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 20:18:07,180	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256, 512), 'config/latents': (4, 4, 4, 8)}
+[2m[36m(pid=3013)[0m 2021-04-24 20:18:16,447	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 20:20:58,053	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256, 512), 'config/latents': (4, 4, 4, 16)}
+[2m[36m(pid=3209)[0m 2021-04-24 20:21:07,271	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 20:23:45,204	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256, 512), 'config/latents': (4, 4, 8, 8)}
+[2m[36m(pid=3393)[0m 2021-04-24 20:23:54,480	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 20:26:33,915	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256, 512), 'config/latents': (4, 4, 8, 16)}
+[2m[36m(pid=3575)[0m 2021-04-24 20:26:43,750	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 20:29:23,328	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256, 512), 'config/latents': (4, 4, 16, 16)}
+[2m[36m(pid=3761)[0m 2021-04-24 20:29:32,601	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 20:32:13,007	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256, 512), 'config/latents': (4, 8, 8, 8)}
+[2m[36m(pid=3964)[0m 2021-04-24 20:32:22,353	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 20:35:04,085	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256, 512), 'config/latents': (4, 8, 8, 16)}
+[2m[36m(pid=4143)[0m 2021-04-24 20:35:13,345	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 20:37:53,177	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256, 512), 'config/latents': (4, 8, 16, 16)}
+[2m[36m(pid=4328)[0m 2021-04-24 20:38:02,636	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 20:40:43,550	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256, 512), 'config/latents': (4, 16, 16, 16)}
+[2m[36m(pid=4523)[0m 2021-04-24 20:40:52,833	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 20:43:34,160	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256, 512), 'config/latents': (8, 8, 8, 8)}
+[2m[36m(pid=4710)[0m 2021-04-24 20:43:43,678	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 20:46:25,729	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256, 512), 'config/latents': (8, 8, 8, 16)}
+[2m[36m(pid=4894)[0m 2021-04-24 20:46:35,112	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 20:49:17,752	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256, 512), 'config/latents': (8, 8, 16, 16)}
+[2m[36m(pid=5083)[0m 2021-04-24 20:49:27,047	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 20:52:09,482	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256, 512), 'config/latents': (8, 16, 16, 16)}
+[2m[36m(pid=5288)[0m 2021-04-24 20:52:18,855	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 20:54:59,319	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256, 512), 'config/latents': (16, 16, 16, 16)}
+[2m[36m(pid=5465)[0m 2021-04-24 20:55:08,609	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 20:57:50,003	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 512, 512), 'config/latents': (4, 4, 4, 4)}
+[2m[36m(pid=5651)[0m 2021-04-24 20:57:59,395	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 21:00:40,461	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 512, 512), 'config/latents': (4, 4, 4, 8)}
+[2m[36m(pid=5852)[0m 2021-04-24 21:00:49,839	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 21:03:29,783	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 512, 512), 'config/latents': (4, 4, 4, 16)}
+[2m[36m(pid=6053)[0m 2021-04-24 21:03:39,112	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 21:06:21,135	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 512, 512), 'config/latents': (4, 4, 8, 8)}
+[2m[36m(pid=6242)[0m 2021-04-24 21:06:30,467	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 21:09:11,873	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 512, 512), 'config/latents': (4, 4, 8, 16)}
+[2m[36m(pid=6441)[0m 2021-04-24 21:09:21,344	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 21:12:07,148	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 512, 512), 'config/latents': (4, 4, 16, 16)}
+[2m[36m(pid=6651)[0m 2021-04-24 21:12:16,349	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 21:15:01,013	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 512, 512), 'config/latents': (4, 8, 8, 8)}
+[2m[36m(pid=6831)[0m 2021-04-24 21:15:10,411	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 21:17:52,056	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 512, 512), 'config/latents': (4, 8, 8, 16)}
+[2m[36m(pid=7017)[0m 2021-04-24 21:18:01,533	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 21:20:42,968	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 512, 512), 'config/latents': (4, 8, 16, 16)}
+[2m[36m(pid=7213)[0m 2021-04-24 21:20:52,357	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 21:23:35,426	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 512, 512), 'config/latents': (4, 16, 16, 16)}
+[2m[36m(pid=7401)[0m 2021-04-24 21:23:44,882	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-04-24 21:26:26,889	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 512, 512), 'config/latents': (8, 8, 8, 8)}
+2021-04-24 21:26:30,120	WARNING worker.py:1107 -- The log monitor on node n-62-20-4 failed with the following error:
+Traceback (most recent call last):
+  File "/zhome/b8/a/122402/VAE-protein/vae_env/lib/python3.8/site-packages/ray/log_monitor.py", line 359, in <module>
+    log_monitor.run()
+  File "/zhome/b8/a/122402/VAE-protein/vae_env/lib/python3.8/site-packages/ray/log_monitor.py", line 280, in run
+    self.open_closed_files()
+  File "/zhome/b8/a/122402/VAE-protein/vae_env/lib/python3.8/site-packages/ray/log_monitor.py", line 167, in open_closed_files
+    self.close_all_files()
+  File "/zhome/b8/a/122402/VAE-protein/vae_env/lib/python3.8/site-packages/ray/log_monitor.py", line 102, in close_all_files
+    os.kill(file_info.worker_pid, 0)
+TypeError: an integer is required (got type str)
+
+2021-04-24 21:29:08,591	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 512, 512), 'config/latents': (8, 8, 8, 16)}
+2021-04-24 21:31:49,936	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 512, 512), 'config/latents': (8, 8, 16, 16)}
+2021-04-24 21:34:30,370	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 512, 512), 'config/latents': (8, 16, 16, 16)}
+2021-04-24 21:37:11,851	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 512, 512), 'config/latents': (16, 16, 16, 16)}
+2021-04-24 21:39:53,164	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512, 512, 512), 'config/latents': (4, 4, 4, 4)}
+2021-04-24 21:42:32,944	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512, 512, 512), 'config/latents': (4, 4, 4, 8)}
+2021-04-24 21:45:13,824	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512, 512, 512), 'config/latents': (4, 4, 4, 16)}
+2021-04-24 21:47:53,938	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512, 512, 512), 'config/latents': (4, 4, 8, 8)}
+2021-04-24 21:50:34,049	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512, 512, 512), 'config/latents': (4, 4, 8, 16)}
+2021-04-24 21:53:14,249	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512, 512, 512), 'config/latents': (4, 4, 16, 16)}
+2021-04-24 21:55:55,743	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512, 512, 512), 'config/latents': (4, 8, 8, 8)}
+2021-04-24 21:58:36,414	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512, 512, 512), 'config/latents': (4, 8, 8, 16)}
+2021-04-24 22:01:17,150	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512, 512, 512), 'config/latents': (4, 8, 16, 16)}
+2021-04-24 22:03:59,420	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512, 512, 512), 'config/latents': (4, 16, 16, 16)}
+2021-04-24 22:06:40,820	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512, 512, 512), 'config/latents': (8, 8, 8, 8)}
+2021-04-24 22:09:22,266	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512, 512, 512), 'config/latents': (8, 8, 8, 16)}
+2021-04-24 22:12:03,931	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512, 512, 512), 'config/latents': (8, 8, 16, 16)}
+2021-04-24 22:14:47,954	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512, 512, 512), 'config/latents': (8, 16, 16, 16)}
+2021-04-24 22:17:28,567	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512, 512, 512), 'config/latents': (16, 16, 16, 16)}
+2021-04-24 22:20:10,934	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (512, 512, 512, 512), 'config/latents': (4, 4, 4, 4)}
+2021-04-24 22:22:51,666	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (512, 512, 512, 512), 'config/latents': (4, 4, 4, 8)}
+2021-04-24 22:25:32,130	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (512, 512, 512, 512), 'config/latents': (4, 4, 4, 16)}
+2021-04-24 22:28:14,014	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (512, 512, 512, 512), 'config/latents': (4, 4, 8, 8)}
+2021-04-24 22:30:56,857	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (512, 512, 512, 512), 'config/latents': (4, 4, 8, 16)}
+2021-04-24 22:33:40,049	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (512, 512, 512, 512), 'config/latents': (4, 4, 16, 16)}
+2021-04-24 22:36:23,334	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (512, 512, 512, 512), 'config/latents': (4, 8, 8, 8)}
+2021-04-24 22:39:05,332	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (512, 512, 512, 512), 'config/latents': (4, 8, 8, 16)}
+2021-04-24 22:41:50,106	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (512, 512, 512, 512), 'config/latents': (4, 8, 16, 16)}
+2021-04-24 22:44:32,592	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (512, 512, 512, 512), 'config/latents': (4, 16, 16, 16)}
+2021-04-24 22:47:14,662	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (512, 512, 512, 512), 'config/latents': (8, 8, 8, 8)}
+2021-04-24 22:49:56,532	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (512, 512, 512, 512), 'config/latents': (8, 8, 8, 16)}
+2021-04-24 22:52:38,095	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (512, 512, 512, 512), 'config/latents': (8, 8, 16, 16)}
+2021-04-24 22:55:19,878	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (512, 512, 512, 512), 'config/latents': (8, 16, 16, 16)}
+2021-04-24 22:58:02,006	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (512, 512, 512, 512), 'config/latents': (16, 16, 16, 16)}
+2021-04-24 22:58:02,064	INFO tune.py:450 -- Total run time: 20011.45 seconds (20000.84 seconds for the tuning loop).
