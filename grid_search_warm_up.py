@@ -70,7 +70,7 @@ def train_func(config):
   stats_e_logvar = {}
   stats_d_mu = {}
   stats_d_logvar = {}
-  for i in range(len(args['layers'])):
+  for i in range(len(kwargs['layers'])):
         stats_d_mu['d'+str(i)] = []
         stats_d_logvar['d'+str(i)] = []
         stats_e_mu['e'+str(i)] = []
@@ -79,7 +79,7 @@ def train_func(config):
         stats_p_logvar['p'+str(i)] = []
         
 
-  for epoch in range(args['epochs']):
+  for epoch in range(200):
       # Unsupervised training on the MSA sequences.
       vae.train()
       if epoch > len(alpha_warm_up)-1:
@@ -150,7 +150,7 @@ def train_func(config):
       'stats_d_mu': stats_d_mu,
       'stats_d_logvar': stats_d_logvar,
       'stats':      stats,
-      'args':       args,
+      'args':       kwargs,
   }, "trained.model.pth")
 
 from itertools import combinations_with_replacement
