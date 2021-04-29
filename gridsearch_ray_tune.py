@@ -40,7 +40,7 @@ def train_func(config):
 
   step = 0.05
   alpha_warm_up = torch.arange(0,1.5+step,step)
-  vae   = HVAE(**args).to(device)
+  vae   = HVAE(**kwargs).to(device)
   opt   = optim.Adam(vae.parameters(), lr = 0.0005)
 
   # rl  = Reconstruction loss
