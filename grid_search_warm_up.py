@@ -108,6 +108,7 @@ def train_func(config):
       stats['rl'].append(np.mean(epoch_losses['rl']))
       stats['kl'].append(np.mean(epoch_losses['kl']))
       stats['cor'].append(np.abs(cor))
+      track.log(rho =np.abs(cor))
       to_print = [
           f"{c.HEADER}EPOCH %03d"          % epoch,
           f"{c.OKBLUE}RL=%4.4f"            % stats['rl'][-1], 
