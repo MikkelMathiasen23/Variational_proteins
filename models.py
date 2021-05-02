@@ -148,10 +148,10 @@ class VAE_bayesian(torch.nn.Module):
         #If group-sparsity the last linear layer is computed according to equation in article.
         if self.group_sparsity:
           self.decoder = torch.nn.Sequential(
-              torch.nn.Linear(self.latent_size, 100),
+              torch.nn.Linear(self.latent_size, 125),
               torch.nn.Dropout(p = self.dropout),
               torch.nn.ReLU(),
-              torch.nn.Linear(100, self.hidden_size // 4),
+              torch.nn.Linear(125, self.hidden_size // 4),
               torch.nn.Dropout(p = self.dropout),
               torch.nn.Sigmoid()        
           )
