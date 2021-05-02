@@ -1,0 +1,282 @@
+/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/autoscaler/_private/cli_logger.py:57: FutureWarning: Not all Ray CLI dependencies were found. In Ray 1.4+, the Ray CLI, autoscaler, and dashboard will only be usable via `pip install 'ray[default]'`. Please update your install command.
+  warnings.warn(
+2021-05-01 14:24:58,520	INFO services.py:1267 -- View the Ray dashboard at [1m[32mhttp://127.0.0.1:8265[39m[22m
+2021-05-01 14:25:08,980	WARNING function_runner.py:544 -- Function checkpointing is disabled. This may result in unexpected behavior when using checkpointing features or certain schedulers. To enable, set the train function arguments to be `func(config, checkpoint_dir=None)`.
+[2m[36m(pid=24882)[0m 2021-05-01 14:26:03,163	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 14:41:25,540	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256), 'config/latents': (4, 4)}
+[2m[36m(pid=24880)[0m 2021-05-01 14:41:36,433	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 14:57:13,740	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256), 'config/latents': (4, 8)}
+[2m[36m(pid=24878)[0m 2021-05-01 14:57:24,265	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 15:12:34,875	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256), 'config/latents': (4, 16)}
+[2m[36m(pid=24877)[0m 2021-05-01 15:12:45,381	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 15:27:57,833	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256), 'config/latents': (8, 8)}
+[2m[36m(pid=24873)[0m 2021-05-01 15:28:08,156	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 15:43:09,762	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256), 'config/latents': (8, 16)}
+[2m[36m(pid=24875)[0m 2021-05-01 15:43:19,940	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 15:58:19,780	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256), 'config/latents': (16, 16)}
+[2m[36m(pid=24870)[0m 2021-05-01 15:58:29,931	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 16:13:25,967	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512), 'config/latents': (4, 4)}
+[2m[36m(pid=24872)[0m 2021-05-01 16:13:35,882	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 16:28:15,364	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512), 'config/latents': (4, 8)}
+[2m[36m(pid=24867)[0m 2021-05-01 16:28:25,368	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 16:43:03,501	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512), 'config/latents': (4, 16)}
+[2m[36m(pid=24866)[0m 2021-05-01 16:43:13,378	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 16:57:38,583	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512), 'config/latents': (8, 8)}
+[2m[36m(pid=24865)[0m 2021-05-01 16:57:48,268	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 17:12:12,867	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512), 'config/latents': (8, 16)}
+[2m[36m(pid=24864)[0m 2021-05-01 17:12:22,528	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 17:26:40,658	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512), 'config/latents': (16, 16)}
+[2m[36m(pid=24862)[0m 2021-05-01 17:26:50,091	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 17:41:37,624	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (512, 512), 'config/latents': (4, 4)}
+[2m[36m(pid=24863)[0m 2021-05-01 17:41:46,897	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 17:56:29,053	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (512, 512), 'config/latents': (4, 8)}
+[2m[36m(pid=24861)[0m 2021-05-01 17:56:38,433	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 18:11:16,280	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (512, 512), 'config/latents': (4, 16)}
+[2m[36m(pid=24860)[0m 2021-05-01 18:11:25,623	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 18:25:59,385	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (512, 512), 'config/latents': (8, 8)}
+2021-05-01 18:25:59,910	WARNING util.py:161 -- The `start_trial` operation took 0.510 s, which may be a performance bottleneck.
+[2m[36m(pid=24859)[0m 2021-05-01 18:26:09,866	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 18:40:40,017	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (512, 512), 'config/latents': (8, 16)}
+[2m[36m(pid=24858)[0m 2021-05-01 18:40:50,429	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 18:55:11,632	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (512, 512), 'config/latents': (16, 16)}
+[2m[36m(pid=24857)[0m 2021-05-01 18:55:20,907	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 19:09:24,198	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256), 'config/latents': (4, 4, 4)}
+[2m[36m(pid=24856)[0m 2021-05-01 19:09:33,504	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 19:23:24,132	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256), 'config/latents': (4, 4, 8)}
+[2m[36m(pid=24855)[0m 2021-05-01 19:23:33,393	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+[2m[36m(pid=24855)[0m 2021-05-01 19:28:57,871	ERROR function_runner.py:254 -- Runner Thread raised error.
+[2m[36m(pid=24855)[0m Traceback (most recent call last):
+[2m[36m(pid=24855)[0m   File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/tune/function_runner.py", line 248, in run
+[2m[36m(pid=24855)[0m     self._entrypoint()
+[2m[36m(pid=24855)[0m   File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/tune/function_runner.py", line 315, in entrypoint
+[2m[36m(pid=24855)[0m     return self._trainable_func(self.config, self._status_reporter,
+[2m[36m(pid=24855)[0m   File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/tune/function_runner.py", line 580, in _trainable_func
+[2m[36m(pid=24855)[0m     output = fn()
+[2m[36m(pid=24855)[0m   File "gridsearch_ray_tune.py", line 94, in train_func
+[2m[36m(pid=24855)[0m     loss, rl, kl      = vae.loss(x_hat, batch,p_mu,p_logvar,d_mu,d_logvar,alpha_warm_up =1)
+[2m[36m(pid=24855)[0m   File "/zhome/45/c/127804/02460/Variational_proteins/HVAE_v2.py", line 183, in loss
+[2m[36m(pid=24855)[0m     p = Normal(p_mu[i], p_logvar[i].mul(1/2).exp())
+[2m[36m(pid=24855)[0m   File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/torch/distributions/normal.py", line 50, in __init__
+[2m[36m(pid=24855)[0m     super(Normal, self).__init__(batch_shape, validate_args=validate_args)
+[2m[36m(pid=24855)[0m   File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/torch/distributions/distribution.py", line 53, in __init__
+[2m[36m(pid=24855)[0m     raise ValueError("The parameter {} has invalid values".format(param))
+[2m[36m(pid=24855)[0m ValueError: The parameter loc has invalid values
+[2m[36m(pid=24855)[0m Exception in thread Thread-2:
+[2m[36m(pid=24855)[0m Traceback (most recent call last):
+[2m[36m(pid=24855)[0m   File "/appl/python/3.8.4/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+[2m[36m(pid=24855)[0m     self.run()
+[2m[36m(pid=24855)[0m   File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/tune/function_runner.py", line 267, in run
+[2m[36m(pid=24855)[0m     raise e
+[2m[36m(pid=24855)[0m   File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/tune/function_runner.py", line 248, in run
+[2m[36m(pid=24855)[0m     self._entrypoint()
+[2m[36m(pid=24855)[0m   File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/tune/function_runner.py", line 315, in entrypoint
+[2m[36m(pid=24855)[0m     return self._trainable_func(self.config, self._status_reporter,
+[2m[36m(pid=24855)[0m   File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/tune/function_runner.py", line 580, in _trainable_func
+[2m[36m(pid=24855)[0m     output = fn()
+[2m[36m(pid=24855)[0m   File "gridsearch_ray_tune.py", line 94, in train_func
+[2m[36m(pid=24855)[0m     loss, rl, kl      = vae.loss(x_hat, batch,p_mu,p_logvar,d_mu,d_logvar,alpha_warm_up =1)
+[2m[36m(pid=24855)[0m   File "/zhome/45/c/127804/02460/Variational_proteins/HVAE_v2.py", line 183, in loss
+[2m[36m(pid=24855)[0m     p = Normal(p_mu[i], p_logvar[i].mul(1/2).exp())
+[2m[36m(pid=24855)[0m   File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/torch/distributions/normal.py", line 50, in __init__
+[2m[36m(pid=24855)[0m     super(Normal, self).__init__(batch_shape, validate_args=validate_args)
+[2m[36m(pid=24855)[0m   File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/torch/distributions/distribution.py", line 53, in __init__
+[2m[36m(pid=24855)[0m     raise ValueError("The parameter {} has invalid values".format(param))
+[2m[36m(pid=24855)[0m ValueError: The parameter loc has invalid values
+2021-05-01 19:28:58,860	ERROR trial_runner.py:732 -- Trial train_func_44ace_00020: Error processing event.
+Traceback (most recent call last):
+  File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/tune/trial_runner.py", line 702, in _process_trial
+    results = self.trial_executor.fetch_result(trial)
+  File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/tune/ray_trial_executor.py", line 686, in fetch_result
+    result = ray.get(trial_future[0], timeout=DEFAULT_GET_TIMEOUT)
+  File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/_private/client_mode_hook.py", line 47, in wrapper
+    return func(*args, **kwargs)
+  File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/worker.py", line 1481, in get
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(TuneError): [36mray::ImplicitFunc.train_buffered()[39m (pid=24855, ip=10.66.20.2)
+  File "python/ray/_raylet.pyx", line 505, in ray._raylet.execute_task
+  File "python/ray/_raylet.pyx", line 449, in ray._raylet.execute_task.function_executor
+  File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/_private/function_manager.py", line 556, in actor_method_executor
+    return method(__ray_actor, *args, **kwargs)
+  File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/tune/trainable.py", line 173, in train_buffered
+    result = self.train()
+  File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/tune/trainable.py", line 232, in train
+    result = self.step()
+  File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/tune/function_runner.py", line 366, in step
+    self._report_thread_runner_error(block=True)
+  File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/tune/function_runner.py", line 512, in _report_thread_runner_error
+    raise TuneError(
+ray.tune.error.TuneError: Trial raised an exception. Traceback:
+[36mray::ImplicitFunc.train_buffered()[39m (pid=24855, ip=10.66.20.2)
+  File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/tune/function_runner.py", line 248, in run
+    self._entrypoint()
+  File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/tune/function_runner.py", line 315, in entrypoint
+    return self._trainable_func(self.config, self._status_reporter,
+  File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/tune/function_runner.py", line 580, in _trainable_func
+    output = fn()
+  File "gridsearch_ray_tune.py", line 94, in train_func
+    loss, rl, kl      = vae.loss(x_hat, batch,p_mu,p_logvar,d_mu,d_logvar,alpha_warm_up =1)
+  File "/zhome/45/c/127804/02460/Variational_proteins/HVAE_v2.py", line 183, in loss
+    p = Normal(p_mu[i], p_logvar[i].mul(1/2).exp())
+  File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/torch/distributions/normal.py", line 50, in __init__
+    super(Normal, self).__init__(batch_shape, validate_args=validate_args)
+  File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/torch/distributions/distribution.py", line 53, in __init__
+    raise ValueError("The parameter {} has invalid values".format(param))
+ValueError: The parameter loc has invalid values
+2021-05-01 19:28:58,906	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256), 'config/latents': (4, 4, 16)}
+[2m[36m(pid=24854)[0m 2021-05-01 19:29:07,996	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 19:42:50,809	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256), 'config/latents': (4, 8, 8)}
+[2m[36m(pid=24852)[0m 2021-05-01 19:42:59,760	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 19:56:36,543	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256), 'config/latents': (4, 8, 16)}
+[2m[36m(pid=24853)[0m 2021-05-01 19:56:45,609	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 20:10:13,511	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256), 'config/latents': (4, 16, 16)}
+[2m[33m(raylet)[0m /zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/autoscaler/_private/cli_logger.py:57: FutureWarning: Not all Ray CLI dependencies were found. In Ray 1.4+, the Ray CLI, autoscaler, and dashboard will only be usable via `pip install 'ray[default]'`. Please update your install command.
+[2m[33m(raylet)[0m   warnings.warn(
+[2m[36m(pid=14017)[0m 2021-05-01 20:10:25,585	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 20:23:51,430	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256), 'config/latents': (8, 8, 8)}
+[2m[33m(raylet)[0m /zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/autoscaler/_private/cli_logger.py:57: FutureWarning: Not all Ray CLI dependencies were found. In Ray 1.4+, the Ray CLI, autoscaler, and dashboard will only be usable via `pip install 'ray[default]'`. Please update your install command.
+[2m[33m(raylet)[0m   warnings.warn(
+[2m[36m(pid=14836)[0m 2021-05-01 20:24:01,128	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 20:37:32,602	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256), 'config/latents': (8, 8, 16)}
+[2m[33m(raylet)[0m /zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/autoscaler/_private/cli_logger.py:57: FutureWarning: Not all Ray CLI dependencies were found. In Ray 1.4+, the Ray CLI, autoscaler, and dashboard will only be usable via `pip install 'ray[default]'`. Please update your install command.
+[2m[33m(raylet)[0m   warnings.warn(
+[2m[36m(pid=15648)[0m 2021-05-01 20:37:42,479	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 20:51:05,998	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256), 'config/latents': (8, 16, 16)}
+[2m[33m(raylet)[0m /zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/autoscaler/_private/cli_logger.py:57: FutureWarning: Not all Ray CLI dependencies were found. In Ray 1.4+, the Ray CLI, autoscaler, and dashboard will only be usable via `pip install 'ray[default]'`. Please update your install command.
+[2m[33m(raylet)[0m   warnings.warn(
+[2m[36m(pid=16472)[0m 2021-05-01 20:51:15,696	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+[2m[36m(pid=16472)[0m 2021-05-01 21:00:49,049	ERROR function_runner.py:254 -- Runner Thread raised error.
+[2m[36m(pid=16472)[0m Traceback (most recent call last):
+[2m[36m(pid=16472)[0m   File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/tune/function_runner.py", line 248, in run
+[2m[36m(pid=16472)[0m     self._entrypoint()
+[2m[36m(pid=16472)[0m   File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/tune/function_runner.py", line 315, in entrypoint
+[2m[36m(pid=16472)[0m     return self._trainable_func(self.config, self._status_reporter,
+[2m[36m(pid=16472)[0m   File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/tune/function_runner.py", line 580, in _trainable_func
+[2m[36m(pid=16472)[0m     output = fn()
+[2m[36m(pid=16472)[0m   File "gridsearch_ray_tune.py", line 94, in train_func
+[2m[36m(pid=16472)[0m     loss, rl, kl      = vae.loss(x_hat, batch,p_mu,p_logvar,d_mu,d_logvar,alpha_warm_up =1)
+[2m[36m(pid=16472)[0m   File "/zhome/45/c/127804/02460/Variational_proteins/HVAE_v2.py", line 183, in loss
+[2m[36m(pid=16472)[0m     p = Normal(p_mu[i], p_logvar[i].mul(1/2).exp())
+[2m[36m(pid=16472)[0m   File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/torch/distributions/normal.py", line 50, in __init__
+[2m[36m(pid=16472)[0m     super(Normal, self).__init__(batch_shape, validate_args=validate_args)
+[2m[36m(pid=16472)[0m   File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/torch/distributions/distribution.py", line 53, in __init__
+[2m[36m(pid=16472)[0m     raise ValueError("The parameter {} has invalid values".format(param))
+[2m[36m(pid=16472)[0m ValueError: The parameter loc has invalid values
+[2m[36m(pid=16472)[0m Exception in thread Thread-2:
+[2m[36m(pid=16472)[0m Traceback (most recent call last):
+[2m[36m(pid=16472)[0m   File "/appl/python/3.8.4/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+[2m[36m(pid=16472)[0m     self.run()
+[2m[36m(pid=16472)[0m   File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/tune/function_runner.py", line 267, in run
+[2m[36m(pid=16472)[0m     raise e
+[2m[36m(pid=16472)[0m   File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/tune/function_runner.py", line 248, in run
+[2m[36m(pid=16472)[0m     self._entrypoint()
+[2m[36m(pid=16472)[0m   File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/tune/function_runner.py", line 315, in entrypoint
+[2m[36m(pid=16472)[0m     return self._trainable_func(self.config, self._status_reporter,
+[2m[36m(pid=16472)[0m   File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/tune/function_runner.py", line 580, in _trainable_func
+[2m[36m(pid=16472)[0m     output = fn()
+[2m[36m(pid=16472)[0m   File "gridsearch_ray_tune.py", line 94, in train_func
+[2m[36m(pid=16472)[0m     loss, rl, kl      = vae.loss(x_hat, batch,p_mu,p_logvar,d_mu,d_logvar,alpha_warm_up =1)
+[2m[36m(pid=16472)[0m   File "/zhome/45/c/127804/02460/Variational_proteins/HVAE_v2.py", line 183, in loss
+[2m[36m(pid=16472)[0m     p = Normal(p_mu[i], p_logvar[i].mul(1/2).exp())
+[2m[36m(pid=16472)[0m   File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/torch/distributions/normal.py", line 50, in __init__
+[2m[36m(pid=16472)[0m     super(Normal, self).__init__(batch_shape, validate_args=validate_args)
+[2m[36m(pid=16472)[0m   File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/torch/distributions/distribution.py", line 53, in __init__
+[2m[36m(pid=16472)[0m     raise ValueError("The parameter {} has invalid values".format(param))
+[2m[36m(pid=16472)[0m ValueError: The parameter loc has invalid values
+2021-05-01 21:00:49,099	ERROR trial_runner.py:732 -- Trial train_func_44ace_00027: Error processing event.
+Traceback (most recent call last):
+  File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/tune/trial_runner.py", line 702, in _process_trial
+    results = self.trial_executor.fetch_result(trial)
+  File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/tune/ray_trial_executor.py", line 686, in fetch_result
+    result = ray.get(trial_future[0], timeout=DEFAULT_GET_TIMEOUT)
+  File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/_private/client_mode_hook.py", line 47, in wrapper
+    return func(*args, **kwargs)
+  File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/worker.py", line 1481, in get
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(TuneError): [36mray::ImplicitFunc.train_buffered()[39m (pid=16472, ip=10.66.20.2)
+  File "python/ray/_raylet.pyx", line 505, in ray._raylet.execute_task
+  File "python/ray/_raylet.pyx", line 449, in ray._raylet.execute_task.function_executor
+  File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/_private/function_manager.py", line 556, in actor_method_executor
+    return method(__ray_actor, *args, **kwargs)
+  File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/tune/trainable.py", line 173, in train_buffered
+    result = self.train()
+  File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/tune/trainable.py", line 232, in train
+    result = self.step()
+  File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/tune/function_runner.py", line 366, in step
+    self._report_thread_runner_error(block=True)
+  File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/tune/function_runner.py", line 512, in _report_thread_runner_error
+    raise TuneError(
+ray.tune.error.TuneError: Trial raised an exception. Traceback:
+[36mray::ImplicitFunc.train_buffered()[39m (pid=16472, ip=10.66.20.2)
+  File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/tune/function_runner.py", line 248, in run
+    self._entrypoint()
+  File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/tune/function_runner.py", line 315, in entrypoint
+    return self._trainable_func(self.config, self._status_reporter,
+  File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/tune/function_runner.py", line 580, in _trainable_func
+    output = fn()
+  File "gridsearch_ray_tune.py", line 94, in train_func
+    loss, rl, kl      = vae.loss(x_hat, batch,p_mu,p_logvar,d_mu,d_logvar,alpha_warm_up =1)
+  File "/zhome/45/c/127804/02460/Variational_proteins/HVAE_v2.py", line 183, in loss
+    p = Normal(p_mu[i], p_logvar[i].mul(1/2).exp())
+  File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/torch/distributions/normal.py", line 50, in __init__
+    super(Normal, self).__init__(batch_shape, validate_args=validate_args)
+  File "/zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/torch/distributions/distribution.py", line 53, in __init__
+    raise ValueError("The parameter {} has invalid values".format(param))
+ValueError: The parameter loc has invalid values
+2021-05-01 21:00:49,110	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 256), 'config/latents': (16, 16, 16)}
+[2m[33m(raylet)[0m /zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/autoscaler/_private/cli_logger.py:57: FutureWarning: Not all Ray CLI dependencies were found. In Ray 1.4+, the Ray CLI, autoscaler, and dashboard will only be usable via `pip install 'ray[default]'`. Please update your install command.
+[2m[33m(raylet)[0m   warnings.warn(
+[2m[36m(pid=17063)[0m 2021-05-01 21:00:58,918	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 21:14:24,002	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 512), 'config/latents': (4, 4, 4)}
+[2m[33m(raylet)[0m /zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/autoscaler/_private/cli_logger.py:57: FutureWarning: Not all Ray CLI dependencies were found. In Ray 1.4+, the Ray CLI, autoscaler, and dashboard will only be usable via `pip install 'ray[default]'`. Please update your install command.
+[2m[33m(raylet)[0m   warnings.warn(
+[2m[36m(pid=17903)[0m 2021-05-01 21:14:34,445	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 21:28:05,416	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 512), 'config/latents': (4, 4, 8)}
+[2m[33m(raylet)[0m /zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/autoscaler/_private/cli_logger.py:57: FutureWarning: Not all Ray CLI dependencies were found. In Ray 1.4+, the Ray CLI, autoscaler, and dashboard will only be usable via `pip install 'ray[default]'`. Please update your install command.
+[2m[33m(raylet)[0m   warnings.warn(
+[2m[36m(pid=18717)[0m 2021-05-01 21:28:15,179	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 21:41:43,113	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 512), 'config/latents': (4, 4, 16)}
+[2m[33m(raylet)[0m /zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/autoscaler/_private/cli_logger.py:57: FutureWarning: Not all Ray CLI dependencies were found. In Ray 1.4+, the Ray CLI, autoscaler, and dashboard will only be usable via `pip install 'ray[default]'`. Please update your install command.
+[2m[33m(raylet)[0m   warnings.warn(
+[2m[36m(pid=19544)[0m 2021-05-01 21:41:52,873	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 21:55:21,434	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 512), 'config/latents': (4, 8, 8)}
+[2m[33m(raylet)[0m /zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/autoscaler/_private/cli_logger.py:57: FutureWarning: Not all Ray CLI dependencies were found. In Ray 1.4+, the Ray CLI, autoscaler, and dashboard will only be usable via `pip install 'ray[default]'`. Please update your install command.
+[2m[33m(raylet)[0m   warnings.warn(
+[2m[36m(pid=20370)[0m 2021-05-01 21:55:31,330	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 22:09:00,868	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 512), 'config/latents': (4, 8, 16)}
+[2m[33m(raylet)[0m /zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/autoscaler/_private/cli_logger.py:57: FutureWarning: Not all Ray CLI dependencies were found. In Ray 1.4+, the Ray CLI, autoscaler, and dashboard will only be usable via `pip install 'ray[default]'`. Please update your install command.
+[2m[33m(raylet)[0m   warnings.warn(
+[2m[36m(pid=21210)[0m 2021-05-01 22:09:10,873	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 22:22:43,070	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 512), 'config/latents': (4, 16, 16)}
+[2m[33m(raylet)[0m /zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/autoscaler/_private/cli_logger.py:57: FutureWarning: Not all Ray CLI dependencies were found. In Ray 1.4+, the Ray CLI, autoscaler, and dashboard will only be usable via `pip install 'ray[default]'`. Please update your install command.
+[2m[33m(raylet)[0m   warnings.warn(
+[2m[36m(pid=22041)[0m 2021-05-01 22:22:52,979	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 22:36:23,223	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 512), 'config/latents': (8, 8, 8)}
+[2m[33m(raylet)[0m /zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/autoscaler/_private/cli_logger.py:57: FutureWarning: Not all Ray CLI dependencies were found. In Ray 1.4+, the Ray CLI, autoscaler, and dashboard will only be usable via `pip install 'ray[default]'`. Please update your install command.
+[2m[33m(raylet)[0m   warnings.warn(
+[2m[36m(pid=22955)[0m 2021-05-01 22:36:33,265	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 22:50:13,276	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 512), 'config/latents': (8, 8, 16)}
+[2m[33m(raylet)[0m /zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/autoscaler/_private/cli_logger.py:57: FutureWarning: Not all Ray CLI dependencies were found. In Ray 1.4+, the Ray CLI, autoscaler, and dashboard will only be usable via `pip install 'ray[default]'`. Please update your install command.
+[2m[33m(raylet)[0m   warnings.warn(
+[2m[36m(pid=23786)[0m 2021-05-01 22:50:23,138	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 23:04:03,474	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 512), 'config/latents': (8, 16, 16)}
+[2m[33m(raylet)[0m /zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/autoscaler/_private/cli_logger.py:57: FutureWarning: Not all Ray CLI dependencies were found. In Ray 1.4+, the Ray CLI, autoscaler, and dashboard will only be usable via `pip install 'ray[default]'`. Please update your install command.
+[2m[33m(raylet)[0m   warnings.warn(
+[2m[36m(pid=24632)[0m 2021-05-01 23:04:13,260	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 23:17:47,727	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 256, 512), 'config/latents': (16, 16, 16)}
+[2m[33m(raylet)[0m /zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/autoscaler/_private/cli_logger.py:57: FutureWarning: Not all Ray CLI dependencies were found. In Ray 1.4+, the Ray CLI, autoscaler, and dashboard will only be usable via `pip install 'ray[default]'`. Please update your install command.
+[2m[33m(raylet)[0m   warnings.warn(
+[2m[36m(pid=25572)[0m 2021-05-01 23:17:57,558	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 23:31:37,481	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512, 512), 'config/latents': (4, 4, 4)}
+[2m[33m(raylet)[0m /zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/autoscaler/_private/cli_logger.py:57: FutureWarning: Not all Ray CLI dependencies were found. In Ray 1.4+, the Ray CLI, autoscaler, and dashboard will only be usable via `pip install 'ray[default]'`. Please update your install command.
+[2m[33m(raylet)[0m   warnings.warn(
+[2m[36m(pid=26404)[0m 2021-05-01 23:31:47,357	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 23:45:28,672	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512, 512), 'config/latents': (4, 4, 8)}
+[2m[33m(raylet)[0m /zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/autoscaler/_private/cli_logger.py:57: FutureWarning: Not all Ray CLI dependencies were found. In Ray 1.4+, the Ray CLI, autoscaler, and dashboard will only be usable via `pip install 'ray[default]'`. Please update your install command.
+[2m[33m(raylet)[0m   warnings.warn(
+[2m[36m(pid=27237)[0m 2021-05-01 23:45:38,745	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-01 23:59:31,209	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512, 512), 'config/latents': (4, 4, 16)}
+[2m[33m(raylet)[0m /zhome/45/c/127804/02460/python384/lib/python3.8/site-packages/ray/autoscaler/_private/cli_logger.py:57: FutureWarning: Not all Ray CLI dependencies were found. In Ray 1.4+, the Ray CLI, autoscaler, and dashboard will only be usable via `pip install 'ray[default]'`. Please update your install command.
+[2m[33m(raylet)[0m   warnings.warn(
+[2m[36m(pid=28084)[0m 2021-05-01 23:59:42,481	WARNING __init__.py:20 -- tune.track.log is now deprecated. Use `tune.report` instead. This warning will throw an error in a future version of Ray.
+2021-05-02 00:13:26,383	INFO logger.py:688 -- Removed the following hyperparameter values when logging to tensorboard: {'config/layers': (256, 512, 512), 'config/latents': (4, 8, 8)}
+User defined signal 2
