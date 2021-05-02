@@ -28,7 +28,7 @@ class training(torch.nn.Module):
       device = kwargs['device']
       
       step = kwargs['step']
-      alpha_warm_up = torch.arange(0,1+step,step)
+      alpha_warm_up = torch.arange(0.1,1-0.1+step,step)
       vae   = HVAE(**kwargs).to(device)
       opt   = optim.Adam(vae.parameters(),lr = 0.0005)
 
