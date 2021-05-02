@@ -1,5 +1,10 @@
 import torch 
 import numpy as np
+from misc import data, c
+from torch import optim
+from scipy.stats import spearmanr
+from torch.distributions.normal import Normal
+
 
 class training(torch.nn.Module):
     def __init__(self, **kwargs):
