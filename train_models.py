@@ -140,7 +140,7 @@ class training(torch.nn.Module):
           'stats_d_logvar': stats_d_logvar,
           'stats':      stats,
           'args':       kwargs,
-      }, "trained.model_HVAE.pth")
+      }, "trained.model_HVAE_l2.pth")
 
 
     def train_vanilla(self,**kwargs):
@@ -306,7 +306,7 @@ class training(torch.nn.Module):
             'state_dict': vae.state_dict(), 
             'stats':      stats,
             'args':       kwargs,
-        }, "trained.model.bayesian.pth")
+        }, "trained.model.bayesian_l2.pth")
       
 
 if __name__ == '__main__':
