@@ -1,3 +1,6 @@
+import torch 
+import numpy as np
+
 class training(torch.nn.Module):
     def __init__(self, **kwargs):
       super(training, self).__init__()
