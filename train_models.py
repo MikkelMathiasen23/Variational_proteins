@@ -30,7 +30,7 @@ class training(torch.nn.Module):
       step = kwargs['step']
       alpha_warm_up = torch.arange(0,1+step,step)
       vae   = HVAE(**kwargs).to(device)
-      opt   = optim.Adam(vae.parameters(), lr = 0.000001)
+      opt   = optim.Adam(vae.parameters(), lr = 0.000005)
 
       # rl  = Reconstruction loss
       # kl  = Kullback-Leibler divergence loss
