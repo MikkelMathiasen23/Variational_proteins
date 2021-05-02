@@ -2,6 +2,7 @@ import torch
 from torch.distributions.normal import Normal
 import torch.nn.functional as F
 from torch.distributions.kl import kl_divergence
+import numpy as np
 
 
 class VAE(torch.nn.Module):
