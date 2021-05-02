@@ -324,7 +324,7 @@ if __name__ == '__main__':
             'bayesian': True,
             'beta': 1,
             'hidden_size': 2000,
-            'latent_size': 30,
+            'latent_size': 2,
             'shared_size': 40,
             'repeat': 1,
             'group_sparsity': True,
