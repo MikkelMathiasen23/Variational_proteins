@@ -282,7 +282,7 @@ class VAE_bayesian(torch.nn.Module):
                 mu, logvar  =   l.weight_mean, l.weight_logvar
                 dist_       =   Normal(mu, logvar.mul(1/2).exp())
 
-                if l.name == 'S':
+                if False:#l.name == 'S':
                    #S matrix is a special case as we want another prior distribution N(-9.3053, log(4))
                   dist_prior_ =   Normal(-9.3053*torch.ones_like(mu), np.log(4)*torch.ones_like(logvar))                
                 else:
