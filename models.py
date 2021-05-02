@@ -378,7 +378,13 @@ class HVAE(torch.nn.Module):
               torch.nn.init.constant_(self.upscale[name].bias, -5)
           torch.nn.init.xavier_normal_(self.W[name].weight)
           torch.nn.init.constant_(self.W[name].bias, -10)
-
+        
+        self.reconstruct = torch.nn.Sequential(
+                                      torch.nn.Linear(self.latents[0],100),
+                                      torch.nn.LeakyReLU(),
+                                      torch.nn.Linear(100, self.hidden_size),
+                                      torch.nn.LeakyReLU(),
+                                      torch.nn.Linear(self.hidden_size,self.input_size))
         for l in self.reconstruct:
           if type(l) == torch.nn.Linear:
             torch.nn.init.xavier_normal_(l.weight)
