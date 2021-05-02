@@ -136,7 +136,7 @@ def mutants(df):
         mutants['value'].append(v)
     return pd.DataFrame(data=mutants)    
 
-def data(batch_size = 128, device = 'cpu', theta=0.2):
+def data(batch_size = 128,neff_w = True ,device = 'cpu', theta=0.2):
     df = fasta('data/BLAT_ECOLX_hmmerbit_plmc_n5_m30_f50_t0.2_r24-286_id100_b105.a2m')
     df['label'] = labels('data/BLAT_ECOLX_hmmerbit_plmc_n5_m30_f50_t0.2_r24-286_id100_b105_LABELS.a2m')
     
@@ -153,10 +153,14 @@ def data(batch_size = 128, device = 'cpu', theta=0.2):
     # ''.join(set(''.join(df.trimmed.to_list())))
 
     dataset    = encode(df.trimmed).to(device)
-    weights, neff = gen_weights(dataset, batch_size)
-    sampler =  torch.utils.data.WeightedRandomSampler(weights/weights.sum(), len(weights))
-    dataloader = DataLoader(dataset, batch_size = batch_size, sampler = sampler)
-    
+    if neff_w:
+            weights, neff = gen_weights(dataset, batch_size)
+            sampler =  torch.utils.data.WeightedRandomSampler(weights/weights.sum(), len(weights))
+            dataloader = DataLoader(dataset, batch_size = batch_size, sampler = sampler)
+    else:
+        dataloader = DataLoader(dataset, batch_size = batch_size)
+        weights = 0
+        neff = 0
     mutants_df = mutants(df)
     mutants_tensor = encode(mutants_df.sequence).to(device)
 
