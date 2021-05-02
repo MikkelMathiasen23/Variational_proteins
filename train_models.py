@@ -175,7 +175,7 @@ class training(torch.nn.Module):
           x_hat_eval, mu, logvar = vae(self.eval_batch, rep=False)
           elbos, _, _ = vae.loss(x_hat_eval, self.eval_batch, mu, logvar)
           diffs       = elbos[1:] - elbos[0] # log-ratio (first equation in the paper)
-          cor, _      = spearmanr(self.mutants_df.value, diffs.detach())
+          cor, _      = spearmanr(self.mutants_df.value, diffs.cpu().detach())
           
           # Populate statistics 
           stats['rl'].append(np.mean(epoch_losses['rl']))
