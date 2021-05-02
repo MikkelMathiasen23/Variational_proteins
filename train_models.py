@@ -28,9 +28,9 @@ class training(torch.nn.Module):
       device = kwargs['device']
       
       step = kwargs['step']
-      alpha_warm_up = torch.arange(0.1,1-0.1+step,step)
+      alpha_warm_up = torch.arange(0.3,1+step,step)
       vae   = HVAE(**kwargs).to(device)
-      opt   = optim.Adam(vae.parameters(),lr = 0.0005)
+      opt   = optim.Adam(vae.parameters(), lr = 0.0001)
 
       # rl  = Reconstruction loss
       # kl  = Kullback-Leibler divergence loss
@@ -311,7 +311,7 @@ class training(torch.nn.Module):
 
 if __name__ == '__main__':
   
-  train_type = 'Bayesian'
+  train_type = 'HVAE'
   kwargs_vae =  {
             'epoch': 32,
             'device':torch.device("cuda:0" if torch.cuda.is_available() else "cpu"),
@@ -334,11 +334,11 @@ if __name__ == '__main__':
         }
   kwargs_hvae = {
         'device':torch.device("cuda:0" if torch.cuda.is_available() else "cpu"),
-        'step': 0.01,
+        'step': 0.005,
         'hidden_size': 1000,
         'layers': [256,512,512],
         'latents': [8,8,16],
-        'epochs': 50,
+        'epochs': 500,
         'train_type': train_type
 
     }
