@@ -1,6 +1,8 @@
 import torch 
 import numpy as np
 from misc import data, c
+from models import *
+
 from torch import optim
 from scipy.stats import spearmanr
 from torch.distributions.normal import Normal
