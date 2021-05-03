@@ -140,7 +140,7 @@ class training(torch.nn.Module):
           'stats_d_logvar': stats_d_logvar,
           'stats':      stats,
           'args':       kwargs,
-      }, "trained.model_HVAE_l2.pth")
+      }, "trained.model_HVAE_l2_exp.pth")
 
 
     def train_vanilla(self,**kwargs):
@@ -337,7 +337,7 @@ if __name__ == '__main__':
         'step': 0.005,
         'hidden_size': 1000,
         'layers': [256,512,512],
-        'latents': [8,8,16],
+        'latents': [2,2,2],
         'epochs': 500,
         'train_type': train_type
 
