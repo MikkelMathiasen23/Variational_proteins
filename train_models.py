@@ -28,7 +28,7 @@ class training(torch.nn.Module):
       device = kwargs['device']
       
       step = kwargs['step']
-      alpha_warm_up = torch.arange(0.3,1+step,step)
+      alpha_warm_up = torch.arange(0,1/4+step,step)
       vae   = HVAE(**kwargs).to(device)
       opt   = optim.Adam(vae.parameters(), lr = 0.0001)
 
@@ -334,10 +334,10 @@ if __name__ == '__main__':
         }
   kwargs_hvae = {
         'device':torch.device("cuda:0" if torch.cuda.is_available() else "cpu"),
-        'step': 0.005,
+        'step': 0.001,
         'hidden_size': 1000,
-        'layers': [256,512,512],
-        'latents': [2,2,2],
+        'layers': [512,512,1024],
+        'latents': [8,8,16],
         'epochs': 500,
         'train_type': train_type
 
@@ -345,7 +345,7 @@ if __name__ == '__main__':
 
 
 
-  kwargs_init = {'batch_size': 128, 'neff_w': True}
+  kwargs_init = {'batch_size': 256, 'neff_w': True}
   train = training(**kwargs_init)
 
   if train_type == 'Vanilla':
