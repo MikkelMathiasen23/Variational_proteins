@@ -306,25 +306,25 @@ class training(torch.nn.Module):
             'state_dict': vae.state_dict(), 
             'stats':      stats,
             'args':       kwargs,
-        }, "trained.model.bayesian_l2.pth")
+        }, "trained.model.bayesian.pth")
       
 
 if __name__ == '__main__':
   
-  train_type = 'HVAE'
+  train_type = 'Bayesian'
   kwargs_vae =  {
-            'epoch': 32,
+            'epoch': 100,
             'device':torch.device("cuda:0" if torch.cuda.is_available() else "cpu"),
             'train_type': train_type
         }
   kwargs_bayesian = {
-            'epoch': 300,
+            'epoch': 500,
             'n_ensambles': 256,
             'device': torch.device("cuda:0" if torch.cuda.is_available() else "cpu"),
             'bayesian': True,
             'beta': 1,
             'hidden_size': 2000,
-            'latent_size': 2,
+            'latent_size': 30,
             'shared_size': 40,
             'repeat': 1,
             'group_sparsity': True,
