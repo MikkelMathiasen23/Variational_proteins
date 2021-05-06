@@ -9,29 +9,23 @@ import numpy as np
 ALPHABET = 'ACDEFGHIKLMNPQRSTVWXYZ-'
 SEQ2IDX  = dict(map(reversed, enumerate(ALPHABET)))
 
-def gen_weights(encodings, batch_size = 1024):
-        print(f"Calculating {len(encodings)} weights...")
-
-        msk_idx = 999 # Data.ALPHABET.find('-')
-        seq_len = encodings.shape[2]
-        flat    = encodings.flatten(1)
-        batches = flat.shape[0] // batch_size + 1
-        weights = []
-
-        for i in range(batches):
-            # print(f"\tBatch {i}")
-            window  =      flat[i * batch_size : (i+1) * batch_size]
-            encwin  = encodings[i * batch_size : (i+1) * batch_size]
-            smatrix = window @ flat.T                  # Similarity matrix
-            seq_len = encwin.argmax(dim=1) != msk_idx  # Mask character `-` do
-            seq_len = seq_len.sum(-1).unsqueeze(-1)    #  not contribute to weight
-            w_batch = 1.0 / (smatrix / seq_len).gt(0.8).sum(1).float()
-            weights.append(w_batch)
-
-        weights = torch.cat(weights) 
-        neff    = weights.sum()
+def compute_weights(data):
+        #Only remove '-'
+        msk_idx = 999
         
-        return (weights, neff)
+        #Compute similarity matrix from windows and flatten encoding:
+        sim = data.flatten(1)@data.flatten(1).T
+        
+        #Ensure that we do not have '-' and define seq_len from this:
+        seq_len = data.argmax(dim=1) !=msk_idx
+        # normalization factor seq_len
+        seq_len = seq_len.sum(-1).unsqueeze(-1)
+        
+        #Compute weights:
+        weights = 1.0 / ((sim/seq_len)>0.8).sum(1).float()
+        neff    = weights.sum()  
+        
+        return weights, neff
 
 def fasta(file_path):
     """This function parses a subset of the FASTA format
@@ -154,7 +148,7 @@ def data(batch_size = 128,neff_w = True ,device = 'cpu', theta=0.2):
 
     dataset    = encode(df.trimmed).to(device)
     if neff_w:
-            weights, neff = gen_weights(dataset, batch_size)
+            weights, neff = compute_weights(dataset)
             sampler =  torch.utils.data.WeightedRandomSampler(weights/weights.sum(), len(weights))
             dataloader = DataLoader(dataset, batch_size = batch_size, sampler = sampler)
     else:
